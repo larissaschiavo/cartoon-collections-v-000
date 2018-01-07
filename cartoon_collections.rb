@@ -18,13 +18,14 @@ all_calls = []
 end
 
 def long_planeteer_calls(calls)# code an argument here
-  long_words = calls.count { |word| word.length > 4 }
-  p long_words
-  if long_words > 0
-    return true
-  else
-    return false
-  end
+  calls.any? {|call| call.length > 4}
+  # long_words = calls.count { |word| word.length > 4 }
+  # p long_words
+  # if long_words > 0
+  #   return true
+  # else
+  #   return false
+  # end
 end
 
 def find_the_cheese(snacks)# code an argument here
